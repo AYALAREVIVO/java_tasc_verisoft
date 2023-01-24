@@ -1,29 +1,33 @@
+public class Cat extends Animal implements Land {
+    // members
 
+    private int numberOfLegs;
+    // constructor
 
-
-public class Cat extends Animal implements Land{
-    
-   private int numberOfLegs;
-    Cat(boolean carnivoros,boolean mammals,int mood){
+    Cat(boolean carnivoros, boolean mammals, int mood) {
         super(carnivoros, mammals, mood);
-        this.numberOfLegs=4;
+        this.numberOfLegs = 4;
     }
-    public  void sayHello(){
+
+    // function that prints how the cat usually says hello
+    public void sayHello() {
         System.out.println("meow~");
     }
-    public  void sayHello(int mood){
-        if(mood==this.MOOD_HAPPY){
+    // function that prints how the cat says hello according to its current mood
+
+    public void sayHello(int mood) {
+        if (mood == this.MOOD_HAPPY) {
             System.out.println("purr, purr");
-        }
-        else if(mood==this.MOOD_SCARE){
-            System.out.println("hiss" );
-        }
-        else {
+        } else if (mood == this.MOOD_SCARE) {
+            System.out.println("hiss");
+        } else {
             sayHello();
         }
     }
-    public int getNumberOfLogs(){
+
+    // function that returns how many legs the cat has
+    public int getNumberOfLogs() {
         return this.numberOfLegs;
     }
-   
+
 }
