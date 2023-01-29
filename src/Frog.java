@@ -18,6 +18,7 @@ public class Frog extends Animal implements Water, Land {
             System.out.println("plop into the water");
         }
     }
+    
     // function that returns how many legs the dog has
 
     public int getNumberOfLogs() {

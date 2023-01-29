@@ -4,8 +4,8 @@ abstract class Animal {
     // members
     private boolean carnivoros;
     private boolean mammals;
-    public final int MOOD_HAPPY = 1;
-    public final int MOOD_SCARE = 2;
+    protected final int MOOD_HAPPY = 1;
+    protected final int MOOD_SCARE = 2;
     private int mood;
 
     // constructor
@@ -37,6 +37,8 @@ abstract class Animal {
     public void setCarnivoros(boolean carnivoros) {
         this.carnivoros = carnivoros;
     }
+
+    //add
     public int getMood(){
         return this.mood;
     }

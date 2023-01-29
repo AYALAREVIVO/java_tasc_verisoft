@@ -13,8 +13,8 @@ public class Cat extends Animal implements Land {
     public void sayHello() {
         System.out.println("meow~");
     }
+    
     // function that prints how the cat says hello according to its current mood
-
     public void sayHello(int mood) {
         if (mood == this.MOOD_HAPPY) {
             System.out.println("purr, purr");

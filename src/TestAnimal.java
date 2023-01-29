@@ -1,6 +1,5 @@
 public class TestAnimal {
     public static void main(String[] args) {
-
         Animal[] animals = { new Cat(true, true, 1), new Dog(true, true, 2), new Frog(false, false, 2) };
         for (Animal animal : animals) {
             System.out.println("the " + animal.getClass().getName() + " say hello:");
