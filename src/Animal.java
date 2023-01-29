@@ -37,5 +37,10 @@ abstract class Animal {
     public void setCarnivoros(boolean carnivoros) {
         this.carnivoros = carnivoros;
     }
-
+    public int getMood(){
+        return this.mood;
+    }
+    public void setMood(int mood){
+        this.mood=mood;
+    }
 }
